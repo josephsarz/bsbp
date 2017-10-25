@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-avatar (click)="presentActionSheet()">
+      <img *ngIf="user?.avatar" [src]="user?.avatar">
+      <img *ngIf="!user?.avatar" src="assets/img/placeholder.png">
+    </ion-avatar>
+  </ion-card>
+
+  <ion-card>
+        <ion-item text-wrap>{{user?.username}}
+         <ion-note item-right>
+           Username
+         </ion-note>
+        </ion-item>
+
+        <ion-item text-wrap><ion-icon secondary item-left name="person"></ion-icon>{{user?.first_name}} {{user?.last_name}}</ion-item>
+        <ion-item text-wrap><ion-icon secondary item-left name="mail"></ion-icon>{{user?.email}}</ion-item>
+
+</ion-card>
+
+  {{Error}}
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+  <button ion-button block color="primary" (click)="logOut()">Logout</button>
+</ion-toolbar>
+</ion-footer>

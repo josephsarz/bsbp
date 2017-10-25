@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Home </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-slides autoplay="3000" loop="true" speed="5000" class="slides">
+
+    <ion-slide>
+      <img src="assets/img/activity/dj.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/activity/bbq.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/activity/sweepstake.jpg">
+    </ion-slide>
+    <ion-slide>
+        <img src="assets/img/activity/dj2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/activity/tshirt.jpg">
+      </ion-slide>
+
+  </ion-slides>
+
+  <!-- <button ion-button block (click)="getKey()">
+    Key
+  </button> -->
+
+  <ion-grid>
+    <ion-row center style="margin-top: 5px">
+      <ion-col>
+          <div>
+           <ion-fab center #fab (click)="openEventFeed()">
+              <button ion-fab>
+                <ion-icon name="home"></ion-icon>
+              </button>
+              <ion-label color="primary">Event Feed</ion-label>
+            </ion-fab>
+          </div>
+      </ion-col>
+      <ion-col>
+              <ion-fab center #fab (click)="openSocialWall()">
+                 <button ion-fab><ion-icon name="people">
+                 </ion-icon>
+               </button>
+               <ion-label color="primary">Social Wall</ion-label>
+               </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab center #fab (click)="openMyActivity()">
+           <button ion-fab><ion-icon name="paper"></ion-icon></button>
+           <ion-label color="primary">My Activity</ion-label>
+         </ion-fab>
+      </ion-col>
+    </ion-row>
+    <ion-row center style="margin-top: 20px">
+      <ion-col>
+        <ion-fab center #fab (click)="openSchedule()">
+           <button ion-fab><ion-icon name="calendar"></ion-icon></button>
+           <ion-label color="primary">Schedule</ion-label>
+         </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab center #fab (click)="openSponsors()">
+           <button ion-fab><ion-icon name="apps"></ion-icon></button>
+           <ion-label color="primary">Sponsors</ion-label>
+         </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab center #fab (click)="openQuest()">
+           <button ion-fab><ion-icon name="podium"></ion-icon></button>
+          <ion-label color="primary">Quest</ion-label>
+         </ion-fab>
+      </ion-col>
+    </ion-row>
+    <ion-row center style="margin-top: 20px">
+      <ion-col>
+        <ion-fab center #fab (click)="openLineUp()">
+           <button ion-fab><ion-icon name="locate"></ion-icon></button>
+           <ion-label color="primary">LineUp</ion-label>
+         </ion-fab>
+      </ion-col>
+      <ion-col>
+         <ion-fab center #fab (click)="openLeaderboard()">
+            <button ion-fab><ion-icon name="trophy"></ion-icon></button>
+            <ion-label color="primary">Leaderboard</ion-label>
+          </ion-fab>
+      </ion-col>
+      <ion-col>
+        <ion-fab center #fab (click)="openProfile()">
+           <button ion-fab><ion-icon name="person"></ion-icon></button>
+           <ion-label color="primary">Profile</ion-label>
+         </ion-fab>
+      </ion-col>
+    </ion-row>
+    <ion-row center style="margin-top: 20px">
+      <ion-col>
+      </ion-col>
+      <ion-col>
+
+         <!-- <ion-fab center #fab (click)="openNotification()">
+            <button ion-fab><ion-icon name="notifications"></ion-icon></button>
+           <ion-label color="primary">Notification</ion-label>
+          </ion-fab> -->
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+
+
+
+
+
+
+</ion-content>

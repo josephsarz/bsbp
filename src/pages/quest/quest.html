@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Quest</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-item  *ngFor="let item of  quests; let i = index" >
+          <ion-row (click)="getDetails(i)">
+            <ion-col col-1 left>
+            <ion-icon name="trophy" class="trophy-icon"></ion-icon>
+            </ion-col>
+            <ion-col col-8 center text-center>
+              <p>{{item.title}}</p>
+              <p>{{item.description}}</p>
+            </ion-col>
+            <ion-col col-3 end>
+              {{item.points}}
+            </ion-col>
+          </ion-row>
+  </ion-item>
+
+</ion-content>

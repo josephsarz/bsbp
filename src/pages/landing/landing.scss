@@ -1,0 +1,32 @@
+page-landing {
+  #landing {
+    // background: color($colors, primary);
+    h1 {
+      font-size: 52px;
+      margin-top: 50px
+    }
+    .marginTop {
+      margin-top: 300px;
+    }
+    .logo {
+      text-align: center;
+        width: 100%;
+        height: 250px;
+
+    }
+    .auth {
+      margin-top: 50px;
+    }
+  }
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

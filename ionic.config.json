@@ -1,0 +1,8 @@
+{
+  "name": "BSBP",
+  "app_id": "4195b07e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

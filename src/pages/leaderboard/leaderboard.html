@@ -1,0 +1,55 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Leaderboard</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar color="primary">
+    <ion-row>
+      <ion-col col-3 left>
+        position
+      </ion-col>
+      <ion-col col-6 center text-center>
+        username
+      </ion-col>
+      <ion-col col-3 end>
+        points
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item  *ngFor="let item of  leads; let i = index" >
+        <ion-row>
+          <ion-col col-1 start>
+            {{item.id}}
+          </ion-col>
+          <ion-col col-8 center text-center>
+            {{item.username}}
+          </ion-col>
+          <ion-col col-3 end>
+            {{item.points}}
+          </ion-col>
+        </ion-row>
+</ion-item>
+  <!-- <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col col-1 start>
+            1
+          </ion-col>
+          <ion-col col-8 center text-center>
+            username
+          </ion-col>
+          <ion-col col-3 end>
+            50
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card> -->
+
+</ion-content>

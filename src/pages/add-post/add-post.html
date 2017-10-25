@@ -1,0 +1,35 @@
+
+...
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Post</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-input placeholder="enter your post" [(ngModel)]="desc"></ion-input>
+  </ion-item>
+    <img src="{{lastImage}}"  style="width: 100%" [hidden]="lastImage === null">
+
+    <p>{{Error}}</p>
+    <p>{{Errors}}</p>
+
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="primary">
+      <ion-buttons>
+        <button ion-button icon-left (click)="presentActionSheet()">
+          <ion-icon name="camera"></ion-icon>Select Image
+        </button>
+        <button ion-button icon-left (click)="uploadPost()" >
+          <ion-icon name="cloud-upload"></ion-icon>Upload Post
+        </button>
+        <button ion-button icon-left (click)="insertPost()" >
+          <ion-icon name="cloud-upload"></ion-icon>Insert Post
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
